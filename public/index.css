@@ -1,0 +1,30 @@
+*{
+    font-family: 'Creepster', cursive;
+    margin: 0;
+}
+
+.header{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 2rem;
+    background: rgb(0,5,24);
+    background: radial-gradient(circle, rgba(0,5,24,1) 0%, rgba(43,0,77,1) 100%);
+  }
+  
+  .header a{
+    color: #01b0cd;
+    text-decoration: none;
+    text-shadow: 1px 2px rgb(203, 247, 121);
+  }
+  
+  .header a:active{
+    color: #01b0cd;
+    text-decoration: none;
+    text-shadow: 2px;
+  }
+
+  body{
+    background-image: url(/rick-and-morty/public/background-image.png);
+  }
