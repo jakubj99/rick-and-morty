@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import AllCharacters from '../components/AllCharacters';
 import LikedCharacters from '../components/LikedCharacters';
-import Pag from '../components/pagination/Pagination';
+
 
 function App() {
   return (
@@ -20,7 +20,6 @@ function App() {
               <LikedCharacters />
             </Route>
           </Switch>
-          <Pag/>
           </React.StrictMode>
         </Router>
     </main>

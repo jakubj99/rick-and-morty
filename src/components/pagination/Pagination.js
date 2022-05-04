@@ -1,13 +1,20 @@
-import React from 'react';
-import { Pagination } from '@mui/material';
+// import React, { useState } from 'react';
+// import { Pagination } from '@mui/material';
+// import usePagination from '@mui/material/usePagination/usePagination';
 
-const Pag = () => {
+// const Pag = () => {
 
-    return(
-        <div className=''>
-        <Pagination count={10} color="primary"/>
-        </div>
-    )
-}
+//    // const [pageNumber, setPageNumber] = useState(1)
 
-export default Pag
+//     // const handleClick = (number) => {
+//     //     setPageNumber(number);
+//     // }
+
+//     return(
+//         <div className=''>
+//         <Pagination count={10} color="primary" onClick={handleClick}/>
+//         </div>
+//     )
+// }
+
+// export default Pag;

@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import { Typography, IconButton, Card, CardActions, CardContent, CardMedia, Grid } from '@mui/material';
 import { ThumbUpAlt, ThumbUpOffAlt } from '@mui/icons-material';
 import useStyles from '../styles/styles.js'
-
-const LIKED_CHARACTERS_KEY = 'char_key';
+import { stateLikedCharacters } from "../states/stateLikedCharacters.js";
 
 export default function CharacterCard ({id, name, image, species, gender, likedProp}) {
     const classes = useStyles();
     const [liked, setLiked] = useState(likedProp);
 
     const handleClick = (id) => {
-        const likedObject = JSON.parse(localStorage.getItem(LIKED_CHARACTERS_KEY)) || {};
-        console.log(likedObject);
-        likedObject[id] = !liked;
-        localStorage.setItem(LIKED_CHARACTERS_KEY, JSON.stringify(likedObject));
+        stateLikedCharacters(id, liked);
         setLiked(!liked);
     }
 
